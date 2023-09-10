@@ -2,66 +2,144 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1,
-  maximum-scale=5"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <link rel="icon" href="devchallenges.png" />
-
-    <link
-      rel="shortcut icon"
-      type="image/x-icon"
-      href="https://devchallenges.io/"
-    />
-
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
-      rel="stylesheet"
-    />
+    <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
 
     <title>Devchallenges</title>
-
-    <style>
-      body {
-        font-family: "Poppins", sans-serif;
-      }
-
-      ul {
-        padding-left: 24px;
-      }
-
-      li {
-        margin-bottom: 8px;
-      }
-
-      .welcome {
-        max-width: 800px;
-        margin: 0 auto;
-      }
-
-      .welcome-text {
-        margin-top: 30vh;
-        font-weight: 500;
-      }
-
-      .welcome-text p {
-        font-size: 1rem;
-        font-weight: 400;
-      }
-
-      .welcome-text h1 {
-        font-size: 1.5rem;
-      }
-
-      .welcome-text a {
-        color: #f7542e;
-      }
-    </style>
   </head>
   <body>
-    <div class="welcome">
+    <header class="header">
+      <div class="header-container--1">
+        <button class="btn btn-search" type="button">Search for places</button>
+        <img src="" alt="">
+      </div>
+
+      <img src="" alt="">
+
+      <h1 class="heading-1">
+        <span class="heading-degrees"><strong class="heading-strong">15</strong>℃</span>
+        <span class="heading-info">Shower</span>
+      </h1>
+
+      <div class="header-container--2">
+        <p class="header-day">Today</p>
+        <span>•</span>
+        <p class="header-data">Fri, 5 Jun</p>
+      </div>
+      <p class="header-place">Helsinki</p>
+    </header>
+
+    <nav class="nav">
+      <button class="btn btn-close" type="button" aria-label="Close search location"></button>
+
+      <form method="" action="" class="form">
+        <label for="location" class="form-label">
+          <input type="text" id="location" name="" class="form-input" placeholder="search location">
+        </label>
+
+        <button class="btn btn-nav" type="button">Search</button>
+      </form>
+
+      <ul class="search">
+        <li class="search-item"><a href="#" class="search-link">London</a></li>
+        <li class="search-item"><a href="#" class="search-link">Barcelona</a></li>
+        <li class="search-item"><a href="#" class="search-link">Long Beach</a></li>
+      </ul>
+    </nav>
+
+    <main class="main">
+      <section class="weather">
+        <div class="weather-data">
+          <p class="weather-day">Tomorrow</p>
+
+          <img src="" alt="">
+          <div class="weather-degrees">
+            <p class="weather-degrees-max"> <strong class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-min"> <strong class="weather-strong">15</strong>℃</p>
+          </div>
+        </div>
+
+        <div class="weather-data">
+          <p class="weather-day">Tomorrow</p>
+
+          <img src="" alt="">
+          <div class="weather-degrees">
+            <p class="weather-degrees-max"> <strong class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-min"> <strong class="weather-strong">15</strong>℃</p>
+          </div>
+        </div>
+
+        <div class="weather-data">
+          <p class="weather-day">Tomorrow</p>
+
+          <img src="" alt="">
+          <div class="weather-degrees">
+            <p class="weather-degrees-max"> <strong class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-min"> <strong class="weather-strong">15</strong>℃</p>
+          </div>
+        </div>
+
+        <div class="weather-data">
+          <p class="weather-day">Tomorrow</p>
+
+          <img src="" alt="">
+          <div class="weather-degrees">
+            <p class="weather-degrees-max"> <strong class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-min"> <strong class="weather-strong">15</strong>℃</p>
+          </div>
+        </div>
+
+        <div class="weather-data">
+          <p class="weather-day">Tomorrow</p>
+
+          <img src="" alt="">
+          <div class="weather-degrees">
+            <p class="weather-degrees-max"> <strong class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-min"> <strong class="weather-strong">15</strong>℃</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="overview">
+        <h2 class="heading-2">Today's Hightlights</h2>
+
+        <div class="overview-wrapper">
+          <div class="overview-container">
+            <p class="overview-description">Wind status</p>
+            <p class="overview-info">
+              <strong class="overview">7</strong>mph
+            </p>
+          </div>
+
+          <div class="overview-container">
+            <p class="overview-description">Humidity</p>
+            <p class="overview-info">
+              <strong class="overview">84</strong>%
+            </p>
+          </div>
+        </div>
+
+        <div class="overview-wrapper">
+          <div class="overview-container">
+            <p class="overview-description">Visibility</p>
+            <p class="overview-info">
+              <strong class="overview">6,4</strong>miles
+            </p>
+          </div>
+
+          <div class="overview-container">
+            <p class="overview-description">Air Pressure</p>
+            <p class="overview-info">
+              <strong class="overview">998</strong>mb
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- <div class="welcome">
       <div class="welcome-text">
         <h1>
           Welcome to
@@ -90,6 +168,6 @@
           platforms to ask for feedback
         </li>
       </ul>
-    </div>
+    </div> -->
   </body>
 </html>

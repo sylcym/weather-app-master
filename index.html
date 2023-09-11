@@ -4,16 +4,20 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <link rel="icon" href="devchallenges.png" />
+    <!-- <link rel="icon" href="devchallenges.png" />
     <link rel="shortcut icon" type="image/x-icon" href="https://devchallenges.io/" />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap" rel="stylesheet" /> -->
 
     <title>Devchallenges</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
   </head>
   <body>
     <header class="header">
       <div class="header-container--1">
-        <button class="btn btn-search" type="button">Search for places</button>
+        <button class="btn btn-search" type="button">Seach for places</button>
         <img src="" alt="">
       </div>
 
@@ -33,7 +37,9 @@
     </header>
 
     <nav class="nav">
-      <button class="btn btn-close" type="button" aria-label="Close search location"></button>
+      <button class="btn btn-close" type="button" aria-label="Close search location">
+        <img src="./assets/icons/icon-close.svg" alt="">
+      </button>
 
       <form method="" action="" class="form">
         <label for="location" class="form-label">
@@ -44,7 +50,7 @@
       </form>
 
       <ul class="search">
-        <li class="search-item"><a href="#" class="search-link">London</a></li>
+        <li class="search-item"><a href="#" class="search-link ">London</a></li>
         <li class="search-item"><a href="#" class="search-link">Barcelona</a></li>
         <li class="search-item"><a href="#" class="search-link">Long Beach</a></li>
       </ul>
@@ -57,8 +63,8 @@
 
           <img src="" alt="">
           <div class="weather-degrees">
-            <p class="weather-degrees-max"> <strong class="weather-strong">15</strong>℃</p>
-            <p class="weather-degrees-min"> <strong class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-max"> <span class="weather-strong">15</span>℃</p>
+            <p class="weather-degrees-min"> <span class="weather-strong">15</span>℃</p>
           </div>
         </div>
 
@@ -67,8 +73,18 @@
 
           <img src="" alt="">
           <div class="weather-degrees">
-            <p class="weather-degrees-max"> <strong class="weather-strong">15</strong>℃</p>
-            <p class="weather-degrees-min"> <strong class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-max"> <span class="weather-strong">15</span>℃</p>
+            <p class="weather-degrees-min"> <span class="weather-strong">15</span>℃</p>
+          </div>
+        </div>
+
+            <div class="weather-data">
+          <p class="weather-day">Tomorrow</p>
+
+          <img src="" alt="">
+          <div class="weather-degrees">
+            <p class="weather-degrees-max"> <span class="weather-strong">15</span>℃</p>
+            <p class="weather-degrees-min"> <span class="weather-strong">15</span>℃</p>
           </div>
         </div>
 
@@ -77,8 +93,8 @@
 
           <img src="" alt="">
           <div class="weather-degrees">
-            <p class="weather-degrees-max"> <strong class="weather-strong">15</strong>℃</p>
-            <p class="weather-degrees-min"> <strong class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-max"> <span class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-min"> <span class="weather-strong">15</strong>℃</p>
           </div>
         </div>
 
@@ -87,18 +103,8 @@
 
           <img src="" alt="">
           <div class="weather-degrees">
-            <p class="weather-degrees-max"> <strong class="weather-strong">15</strong>℃</p>
-            <p class="weather-degrees-min"> <strong class="weather-strong">15</strong>℃</p>
-          </div>
-        </div>
-
-        <div class="weather-data">
-          <p class="weather-day">Tomorrow</p>
-
-          <img src="" alt="">
-          <div class="weather-degrees">
-            <p class="weather-degrees-max"> <strong class="weather-strong">15</strong>℃</p>
-            <p class="weather-degrees-min"> <strong class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-max"> <span class="weather-strong">15</strong>℃</p>
+            <p class="weather-degrees-min"> <span class="weather-strong">15</strong>℃</p>
           </div>
         </div>
       </section>
@@ -139,6 +145,9 @@
         </div>
       </section>
     </main>
+    <footer class="footer">
+      <p class="footer-info">created by <strong class="footer-strong">username</strong> - devChallenges.io</p>
+    </footer>
     <!-- <div class="welcome">
       <div class="welcome-text">
         <h1>

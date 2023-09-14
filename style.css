@@ -23,7 +23,7 @@ html {
 body {
   height: 100vh;
   font-family: 'Raleway', sans-serif;
-  background-color: var(--bck-prime);
+  background-color: var(--bck-second);
 }
 
 .header {
@@ -32,6 +32,7 @@ body {
   flex-direction: column;
   align-items: center;
   width: 100%;
+  max-width: 459px;
   min-height: 81rem;
   background-color: var(--bck-prime);
   padding: 1.8rem 1.2rem 10.5rem 1.1rem;
@@ -70,6 +71,7 @@ header::before {
   font-weight: 500;
   border: inherit;
   padding: 11px 20.5px;
+  cursor: pointer;
 }
 
 .btn-search {
@@ -77,23 +79,31 @@ header::before {
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
-.header-icon::after {
+.btn-here {
+  position: relative;
+  width: 40px;
+  height: 30px;
+  background-color: transparent;
+  border: none;
+}
+
+.btn-here::after {
   display: block;
   position: absolute;
   content: '';
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 40px;
+  top: -2px;
+  right: 1px;
+  width: 37px;
+  height: 35px;
   background-color: var(--btn-bck);
   border-radius: 100%;
 }
 
-.header-icon::before {
+.btn-here::before {
   display: block;
   position: absolute;
   content: '';
-  top: 15px;
+  top: 11px;
   right: 16px;
   width: 8px;
   height: 8px;
@@ -330,12 +340,13 @@ header::before {
   display: flex;
   flex-direction: column;
   row-gap: 3.2rem;
+  min-height: 15.9rem;
 }
 
 .overview-container {
   background-color: var(--bck-prime);
   color: var(--btn-text);
-  padding: 2.2rem 0 3.5rem;
+  padding: 2.2rem 0 1.4rem;
 }
 
 .overview-description {
@@ -429,16 +440,25 @@ header::before {
     /* background-color: red; */
   }
 
+  .heading-1 {
+    row-gap: 8.7rem;
+    padding-bottom: 8.7rem;
+  }
+
   .weather-data {
+    min-width: 12rem;
     width: 29%;
     display: flex;
-    flex-wrap: wrap;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
   }
 
   .overview-wrapper {
     display: flex;
     flex-direction: row;
-    column-gap: 2rem;
+    column-gap: 4.8rem;
+    margin-bottom: 1.6rem;
   }
 
   .overview-container {
@@ -450,7 +470,7 @@ header::before {
   .main {
     width: 98.1rem;
     /* background-color: yellow; */
-    padding: 0 12.3rem 11.3rem 15.4rem;
+    padding: 0 12.3rem 1rem 15.4rem;
   }
 
   .wrapper-all {
@@ -497,11 +517,11 @@ header::before {
   .weather {
     flex-wrap: nowrap;
     justify-content: center;
-    padding: 0 12.4rem 7.1rem 12.4rem;
+    padding: 0 12.4rem 7.2rem 12.4rem;
   }
 
   .overview {
-    column-gap: ;
+    /* column-gap: ; */
     padding: 0 0 0 0;
   }
 

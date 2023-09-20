@@ -36,6 +36,8 @@ body {
   min-height: 81rem;
   background-color: var(--bck-prime);
   padding: 1.8rem 1.2rem 10.5rem 1.1rem;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 header::before {
@@ -85,6 +87,7 @@ header::before {
   height: 30px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
 }
 
 .btn-here::after {
@@ -148,6 +151,7 @@ header::before {
 .header-container--2 {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   column-gap: 1.6rem;
   color: var(--txt-prime);
   font-size: 1.8rem;
@@ -158,6 +162,7 @@ header::before {
 .header-location {
   display: flex;
   align-items: center;
+  justify-content: center;
   flex-direction: row;
 }
 
@@ -184,6 +189,10 @@ header::before {
   z-index: 5;
 }
 
+.nav.open {
+  display: block;
+}
+
 .btn-close {
   position: absolute;
   top: 12px;
@@ -192,6 +201,7 @@ header::before {
   height: 2.4rem;
   background-color: var(--bck-prime);
   border: inherit;
+  cursor: pointer;
 }
 
 .icon-close {
@@ -501,17 +511,14 @@ header::before {
     height: 4rem;
     border-radius: 100%;
     border: inherit;
+    color: var(--btn-text);
+    background-color: var(--btn-btn);
     cursor: pointer;
   }
 
-  .btn-weather-c {
+  .btn-weather.active {
     color: var(--bck-second);
     background-color: var(--btn-text);
-  }
-
-  .btn-weather-f {
-    color: var(--btn-text);
-    background-color: var(--btn-btn);
   }
 
   .weather {

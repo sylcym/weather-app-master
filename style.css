@@ -438,6 +438,13 @@ header::before {
   margin-top: 0.4rem;
 }
 
+.footer {
+  position: fixed;
+  bottom: 2px;
+  right: 4px;
+  color: #fff;
+}
+
 @media screen and (min-width: 950px) {
   .wrapper-all {
     display: flex;

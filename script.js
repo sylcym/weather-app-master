@@ -35,7 +35,7 @@ async function getWeather() {
 
     displayTodayWeather(weatherData);
     displayOverviewWeather(weatherData);
-    weekWeatherData.forEach(item => displayWeekWeather(item));
+    weekWeatherData.forEach((item, index) => displayWeekWeather(item, index));
   } catch (err) {
     alert(err);
   }
@@ -72,6 +72,8 @@ function displayTodayWeather(weatherData) {
 
 function displayOverviewWeather(weatherData) {
   weatherMainOverview.innerHTML = '';
+
+  console.log(weatherData)
 
   const html = `
     <h2 class="heading-2">Today's Hightlights</h2>
@@ -130,13 +132,24 @@ function displayOverviewWeather(weatherData) {
   weatherMainOverview.insertAdjacentHTML('beforeend', html);
 }
 
-function displayWeekWeather(weatherData) {
+function displayWeekWeather(weatherData, index) {
+  let day = '';
+
+  if (index === 0) {
+    day = 'Tomorrow'
+  } else {
+    const today = new Date();
+    const nextDay = new Date(today);
+    nextDay.setDate(nextDay.getDate() + index);
+
+    day = nextDay.toUTCString().split(' ').slice(0, 3).join(' ');
+  }
 
   const html = `
     <div class="weather-data">
-      <p class="weather-day">Tomorrow</p>
+      <p class="weather-day">${day}</p>
 
-      <img class="img-aura" alt="Images aura" src=${imgUrl + weatherData.weather[0].icon}@4x.png>
+      <img class="img-aura" alt="Images aura" src=${imgUrl + weatherData.weather[0].icon}@2x.png>
       <div class="weather-degrees">
         <p class="weather-degrees-max"><span class="weather-strong">${Math.trunc(weatherData.main.temp_min)}</span>℃</p>
         <p class="weather-degrees-min"><span class="weather-strong">${Math.trunc(weatherData.main.temp_max)}</span>℃</p>

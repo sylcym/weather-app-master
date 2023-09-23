@@ -15,6 +15,8 @@ const apiUrl = 'https://api.openweathermap.org/data/2.5/weather';
 const imgUrl = 'http://openweathermap.org/img/wn/';
 const apiKey = config.MY_KEY;
 
+const miles = 0.00062137;
+
 let defaultUnits = 'metric';
 
 async function getWeather() {
@@ -73,8 +75,6 @@ function displayTodayWeather(weatherData) {
 function displayOverviewWeather(weatherData) {
   weatherMainOverview.innerHTML = '';
 
-  console.log(weatherData)
-
   const html = `
     <h2 class="heading-2">Today's Hightlights</h2>
     
@@ -114,7 +114,7 @@ function displayOverviewWeather(weatherData) {
       <div class="overview-container">
         <p class="overview-description">Visibility</p>
         <p class="overview-info">
-          <strong class="overview-number">${weatherData.visibility}</strong>
+          <strong class="overview-number">${(weatherData.visibility * miles).toFixed(1)}</strong>
           <span class="overview-detail">miles</span>
         </p>
       </div>

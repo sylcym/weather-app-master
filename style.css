@@ -42,11 +42,12 @@ body {
 header::before {
   content: '';
   position: absolute;
+  top: 8.2rem;
   display: inline-block;
-  height: 100%;
+  height: 45%;
   width: 100%;
   background-image: url(./assets/images/Cloud-background.png);
-  background-position: top 4rem center;
+  background-position: top center;
   background-repeat: no-repeat;
   opacity: 0.1;
 }
@@ -462,7 +463,7 @@ header::before {
 
   .heading-1 {
     row-gap: 8.7rem;
-    padding-bottom: 8.7rem;
+    padding-bottom: 7rem;
   }
 
   .weather-data {
@@ -550,15 +551,5 @@ header::before {
 
   .overview-container {
     width: 48%;
-  }
-}
-
-@media (hover: hover) {
-  body {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    overflow: hidden;
   }
 }
